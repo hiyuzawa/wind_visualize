@@ -11,11 +11,11 @@ class MapJp {
                         .attr("width", width)
                         .attr("height", height);
         //
-        // scale の 2.4の値を変更すことで描画する地図の拡縮が変わります
+        // scale の 2.0の値を変更すことで描画する地図の拡縮が変わります
         // rotateの [225,-36] の値を変更することで中心位置が変わります
         //
         this.projection = d3.geo.orthographic()                            
-                            .scale(width * 2.4)
+                            .scale(width * 2.0)
                             .translate([width / 2, height / 2])
                             .clipAngle(90)
                             .rotate([225, -36]);
@@ -30,7 +30,6 @@ class MapJp {
 
         this._drawGraticule();
         this._drawJapan();
-
     }
 
     // これは風の描画にあとで必要
@@ -59,9 +58,7 @@ class MapJp {
                 .append("path").attr("d", this.path)
                 .attr("class", "country");
         })
-
     }
-
 }
 
 export default MapJp;
