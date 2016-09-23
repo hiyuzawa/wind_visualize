@@ -15,7 +15,7 @@
     "d3": "^3.5.17",
     "gulp": "^3.9.1",
     "gulp-webserver": "^0.9.1",
-    "topojson": "^1.6.26",
+    "topojson": "1.6.26",
     "vinyl-source-stream": "^1.1.0"
   }
 }
