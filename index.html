@@ -4,10 +4,29 @@
     <meta charset="utf-8">
     <title>Wind Visualize</title>
     <style type="text/css" media="screen">
+    .graticule {
+        fill: none; 
+        stroke: #777;
+    }
+    .country { 
+        fill: #ccc; 
+    }
+    .sea {
+        fill: #fff;
+    }
+    svg {
+        position: absolute;
+        z-index:  0;
+        display: inline;
+    }
+    canvas {
+        position: absolute;
+        z-index: 10;
+        display: inline;
+    }
     </style>
 </head>
 <body>
-Hello!
 <script src="./bundle.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
